@@ -144,13 +144,7 @@
                                 <button onClick={() => document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})} className="bg-navy hover:bg-emerald text-white text-base md:text-lg px-8 py-4 rounded-xl font-bold shadow-xl shadow-navy/20 transition-all hover:-translate-y-1 flex items-center justify-center gap-2 group w-full sm:w-auto">
                                     Get the Planner <i className="ph-bold ph-arrow-right group-hover:translate-x-1 transition-transform"></i>
                                 </button>
-                            <div className="flex items-center gap-3 mt-4 sm:mt-0 sm:ml-4 bg-white/50 backdrop-blur-sm px-4 py-2 rounded-xl border border-slate-100">
-                                <div className="flex text-gold text-lg drop-shadow-sm">
-                                    <i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i><i className="ph-fill ph-star"></i>
-                                </div>
-                                <span className="text-sm text-slate-600 font-semibold tracking-wide">Rated 4.9/5 by 5,000+ Students</span>
                             </div>
-                        </div>
                         </div>
                         
                         <div className="relative">
@@ -319,10 +313,10 @@
                 <section className="py-20 bg-navy text-white relative overflow-hidden" id="audience">
                     <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-emerald/10 to-transparent pointer-events-none"></div>
                     
-                    <div className="container mx-auto px-6 max-w-7xl grid lg:grid-cols-2 gap-12 items-center relative z-10">
-                        <div>
-                            <span className="text-gold font-semibold uppercase tracking-widest text-xs md:text-sm mb-3 block">Perfect For</span>
-                            <h2 className="text-2xl md:text-4xl font-heading font-bold mb-6 md:mb-8 text-white">Who is this planner designed for?</h2>
+                    <div className="container mx-auto px-6 max-w-3xl relative z-10 text-center">
+                        <div className="bg-white/5 backdrop-blur-md p-8 md:p-14 rounded-3xl border border-white/10 text-left">
+                            <span className="text-gold font-semibold uppercase tracking-widest text-xs md:text-sm mb-3 block text-center md:text-left">Perfect For</span>
+                            <h2 className="text-2xl md:text-4xl font-heading font-bold mb-6 md:mb-8 text-white text-center md:text-left">Who is this planner designed for?</h2>
                             <ul className="space-y-4">
                                 {audiences.map((item, idx) => (
                                     <li key={idx} className="flex items-start gap-3 md:gap-4 text-slate-300 text-base md:text-lg">
@@ -331,22 +325,6 @@
                                     </li>
                                 ))}
                             </ul>
-                        </div>
-                        
-                        <div className="bg-white/5 backdrop-blur-lg p-8 md:p-14 rounded-3xl relative border border-white/10">
-                            <i className="ph-fill ph-quotes absolute top-6 right-8 text-4xl md:text-6xl text-white/5"></i>
-                            <p className="text-lg md:text-2xl font-body text-slate-300 leading-relaxed mb-8 relative z-10 max-w-lg">
-                                "This planner completely changed how I approached my MBA. Instead of reacting to deadlines, I was proactively building my profile. I secured my dream placement in week 1."
-                            </p>
-                            <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-full border-2 border-emerald/50 bg-emerald/10 flex items-center justify-center text-emerald text-xl font-bold">
-                                    R
-                                </div>
-                                <div>
-                                    <strong className="block text-white text-lg tracking-wide">Rahul S.</strong>
-                                    <span className="text-emerald font-medium text-sm">Class of 2025</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
